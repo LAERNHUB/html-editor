@@ -1,0 +1,35 @@
+<!-- JQuery -->
+<html>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- CSS Style -->
+<link rel="stylesheet" href="style.css">
+
+<style type="text/css">
+br { display: none; }
+ textarea{display: block;margin: 10px 0; width:100%; border: 1px solid #333;}
+ 
+ iframe{display: block;margin: 10px 0; width:100%; resize:both; overflow: auto; border: 1px solid #333;}
+</style>
+
+<!-- JavaScript -->
+
+<script type="text/javascript">
+ function updateIframe(){
+ var myFrame = $("#myframe").contents().find('body');
+ var textareaValue = $("textarea").val();
+ myFrame.html(textareaValue);
+ }
+</script>
+<h1><marquee><font face="Calibri" color="#FF0000"> HTML Code Editor By Learnhub</font></marquee></h1>
+<button style="border:1" type="button" onclick="updateIframe()"><i class="fa fa-pencil-square-o"></i><img s  style="border-radius: 10 " src="icons8-circled-play-50.png"></button>
+
+<span><textarea rows="5" cols="50" placeholder="Type HTML Code Here"></textarea>&nbsp;&nbsp;
+<iframe id="myframe"></iframe>
+</span>
+<div>
+
+	<span><h3 >Created  by  :</h3><a href="https://www.youtube.com/channel/UCDagUL0r6733JxzH74q49fA/">
+		<font color="#FF0000" face="Calibri" id="no">Learnhub</font></a></span>
+	</html>
+	
